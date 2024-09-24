@@ -1,8 +1,9 @@
-import datetime
+def add(value1: int, value2: int) -> int:
+    return value1 + value2
 
-def print_str(content: str):
-    print(f"content = {content}")
-
-if __name__ == "__main__":
-    print_str("1")
-    print_str(1)    # 別にこっちも行ける
+# これは実行できるし ->　3
+result:int = add(1, 2)
+print(f"result = {result}")
+# これも実行できる -> "AABB"
+result = add("AA", "BB")
+print(f"result = {result}")
