@@ -8,6 +8,8 @@ def get_user_name(id: int) -> Optional[str]:
     return users.get(id, None)
 
 name = get_user_name(1)
-print(f"lower name = {name.lower()}")
+if name is not None:
+    print(f"lower name = {name.lower()}")
 name = get_user_name(3)
-print(f"lower name = {name.lower()}")
+if name is not None:
+    print(f"lower name = {name.lower()}")
