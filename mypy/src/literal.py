@@ -7,5 +7,5 @@ class Janken:
 
 goo = Janken("グー")
 print(goo)
-press = Janken("プレス機")
-print(press)
+# press = Janken("プレス機")
+# print(press)
