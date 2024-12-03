@@ -1,9 +1,8 @@
 from fractions import Fraction
 import time
 
-import code_examples.chapter7.automated_recipe_maker as recipe_maker
-from code_examples.chapter7.automated_recipe_maker import Ingredient
-
+import chapter7.src.automated_recipe_maker as recipe_maker
+from chapter7.src.automated_recipe_maker import Ingredient
 
 # I am purposely not using dataclasses here in order to 
 # simulate a more "legacy" codebase. If new code, these should be dataclasses
