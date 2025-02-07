@@ -5,8 +5,11 @@ class Capsule:
         self.__private_prop = "CCC"
     
     def __repr__(self):
-        return f"public = {self.public_prop}, protected = {self._protected_prop}, private = {self.__private_prop}"
-    
+        return f"(repr)public = {self.public_prop}, protected = {self._protected_prop}, private = {self.__private_prop}"
+
+    # def __str__(self):
+    #     return f"(str)public = {self.public_prop}, protected = {self._protected_prop}, private = {self.__private_prop}"
+
 capsule = Capsule()
 capsule.public_prop = "DDDD"
 capsule._protected_prop = "EEEE"
