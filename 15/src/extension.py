@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 import datetime
 from typing import Union
+import notifier
 
 # 料理を表すクラス
 class Dish:
@@ -63,8 +64,10 @@ def declare_notification(
     # 何らかの処理
 
     # 通知する
-    send_notification(NewSpecial(dish, start_date, end_date))
+    notifier.notify(
+        Email("料理が作成されました"),
+        NewSpecial(dish, start_date, end_date))
 
 # 通知を送信する処理
 def send_notification(notification: NotificationType):
-    
+    pass
